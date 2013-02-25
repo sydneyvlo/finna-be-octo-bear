@@ -52,9 +52,11 @@ public class MainActivity extends Activity {
 		if(isFlashOn) {
 			p.setFlashMode(Parameters.FLASH_MODE_OFF);
 			mCamera.setParameters(p);
+			isFlashOn = false;
 		} else {
 			p.setFlashMode(Parameters.FLASH_MODE_TORCH);
 			mCamera.setParameters(p);
+			isFlashOn = true;
 		}
 	}
 
