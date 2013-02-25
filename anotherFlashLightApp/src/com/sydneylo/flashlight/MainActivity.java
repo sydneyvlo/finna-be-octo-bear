@@ -30,6 +30,16 @@ public class MainActivity extends Activity {
 			}
 		});
 	}
+	
+	@Override
+	public void onResume() {
+		super.onRestart();
+	}
+	
+	@Override
+	public void onPause() {
+		super.onPause();
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
